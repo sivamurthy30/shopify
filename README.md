@@ -76,41 +76,33 @@ All tables use `tenantId` for data isolation. Composite indexes on `[tenantId, s
 
 ## Getting Started
 
-**Prerequisites**
-- Node.js 18+
-- PostgreSQL database (or use Neon/Supabase free tier)
-- Shopify Partners account (free)
-
-**Quick Setup**
+**Quick Demo (No Setup Required)**
 
 ```bash
 # Clone and install
-git clone <your-repo-url>
-cd xeno-shopify-insights
+git clone https://github.com/sivamurthy30/shopify.git
+cd shopify
 npm install
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your database URL and secrets
-
-# Set up database
-npm run db:push
 
 # Start server
 npm run dev
 ```
 
-Visit http://localhost:3000
+Visit http://localhost:3000/auth/demo for instant demo with mock data!
 
-**Shopify Setup**
+**Live Demo**
 
-1. Create a development store at partners.shopify.com
-2. Add some test products, customers, and orders
-3. Create a custom app:
-   - Settings → Apps → Develop apps
-   - Add scopes: `read_customers`, `read_orders`, `read_products`
-   - Install and copy the access token
-4. In the app, add your store with the domain and token
+Visit the deployed version: [Demo Link](https://your-app.vercel.app/auth/demo)
+
+**Features in Demo Mode**
+- ✅ Dashboard with 3 mock stores
+- ✅ Full analytics with interactive charts
+- ✅ Revenue trends and growth metrics
+- ✅ Customer segmentation
+- ✅ Top customers and product performance
+- ✅ Professional UI showcase
+
+No database or Shopify account needed for demo!
 
 ## 📡 API Endpoints
 
